@@ -3,6 +3,7 @@ using Duende.IdentityServer.EntityFramework.Options;
 using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using static IdentityModel.ClaimComparer;
 
 namespace Dislinkt.Data
 {
@@ -13,5 +14,7 @@ namespace Dislinkt.Data
         {
 
         }
+
+        public DbSet<ApplicationUser> Users { get; set; }
     }
 }

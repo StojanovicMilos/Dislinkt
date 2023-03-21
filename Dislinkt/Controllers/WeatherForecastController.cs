@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Dislinkt.Controllers
 {
+    [AllowAnonymous] //TODO
     [Authorize]
     [ApiController]
     [Route("[controller]")]
